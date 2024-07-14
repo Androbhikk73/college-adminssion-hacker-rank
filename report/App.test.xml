@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="App.test"
+    errors="1" failures="0" hostname="" id="" package="App.test" skipped="9"
+    tests="0" time="0.001000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 126.0.6478.127 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;D:\\KousikWorkspace\\Hacker Rank\\college-admission\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
+     port: 9515,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: {}
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 126.0.6478.127 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"><![CDATA[
+      SessionNotCreatedError: An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 126.0.6478.127 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    at Object.throwDecodedError (D:\KousikWorkspace\Hacker Rank\college-admission\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at parseHttpResponse (D:\KousikWorkspace\Hacker Rank\college-admission\node_modules\selenium-webdriver\lib\http.js:587:13)
+    at Executor.execute (D:\KousikWorkspace\Hacker Rank\college-admission\node_modules\selenium-webdriver\lib\http.js:515:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Testing Signin Page for Applicant" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Login Page for Applicant" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Navbar in applicant page" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Apply page of applicants" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Status page of applicants" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Login Page for Admin" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Navbar in admin page" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing Applications page of admin" classname="App.test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Testing AddSeats page of admin" classname="App.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

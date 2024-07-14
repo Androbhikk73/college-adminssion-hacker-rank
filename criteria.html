@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div
+			id="main-splitpane-left"
+			class="base-question__left-pane">
+			<div class="base-question__left-pane__wrapper">
+				<section class="question-view__title-wrapper"><h1 class="disable-text-selection question-view__title">1. ReactJS - CollegeAdmissionSystem</h1></section>
+				<section class="question-view__instruction">
+					<div class="candidate-rich-text disable-text-selection">
+						<div id="gjf16smrq1q-instruction">
+							<p>Create an admission portal for a college that&nbsp;enables&nbsp;students to apply for available courses. This application makes use of redux toolkit to implement redux logic.</p>
+
+							<p>
+								Follow the instructions given for each component and complete the application.<br />
+								&nbsp;
+							</p>
+
+							<p><strong>IDE Instruction:</strong></p>
+
+							<p>To run the application: <strong>Run -&gt; Run</strong>. (from menu bar)</p>
+
+							<p>To test the application: <strong>Run -&gt; Test</strong>.</p>
+
+							<p><strong>Note: Your application should be running in port 8000 before you start the test.&nbsp;</strong></p>
+
+							<p>&nbsp;</p>
+
+							<h4>Signup Component</h4>
+
+							<ul>
+								<li>This page enables students to signup in this portal.</li>
+								<li>Get all the inputs from the user. On submit validate the inputs.</li>
+								<li>On invalid input display the error message in a paragraph with id 'errorMessage'.</li>
+								<li>Make sure that the given email is not registered already.</li>
+								<li>
+									Finally store user details to json db using the URL specified in the code.<br />
+									<br />
+									<strong>Note: Drag preview images and open them new tab to get best view.</strong>
+								</li>
+							</ul>
+
+							<h4>
+								<img
+									height="768"
+									src="https://hrcdn.net/s3_pub/istreet-assets/dH7oCD8DBcQUrKxP_AXyXQ/signup.png"
+									width="1366" />
+							</h4>
+
+							<h4>Login Component</h4>
+
+							<ul>
+								<li>This page should be used as login way for both applicants and admin by toggling the checkbox with id 'userType'.</li>
+								<li>Verify the entered credentials with data in db.</li>
+								<li>The api to get the user credential from the db is given in code.</li>
+								<li>Redirect the admin to '/applications' on successful login.</li>
+								<li>Redirect the applicants to '/apply' on successful login.</li>
+								<li>Admin credentials-&nbsp;admin@abz.com ,&nbsp;Admin@123 .</li>
+							</ul>
+
+							<h4>
+								<img
+									height="500"
+									src="https://hrcdn.net/s3_pub/istreet-assets/pcH6VDZgnap0BKN2y-XwuA/login.png"
+									width="1366" />
+							</h4>
+
+							<h4>Navbar Component</h4>
+
+							<ul>
+								<li>This component is common for both applicants and admin.</li>
+								<li>For admins, first nav item is the link to '/applications' page.</li>
+								<li>Second nav item is the link to '/addseats' page.</li>
+								<li>Third nav item should be username. Sample-&nbsp;'User: Admin'.</li>
+								<li>For applicants, first nav item is the link to '/apply' page.</li>
+								<li>Second nav item is the link to '/status' page.</li>
+								<li>Third nav item should be username. Sample-&nbsp;'User: John Doe'.</li>
+								<li>Both users should have Logout button in fourth nav item.</li>
+							</ul>
+
+							<h4>ApplyCourse Component:</h4>
+
+							<ul>
+								<li>This page allows applicant to apply for courses offered by the college.</li>
+								<li>Make use of 'getCourses' action function and display the courses in given table template.</li>
+								<li>Clicking on apply button for any course should submit an application for the course with user details.</li>
+								<li>The api and request body format are provided in the code</li>
+								<li>On successful submission display the alert with success message along with application id.</li>
+								<li>Make sure, user should submit only one application for each course.</li>
+								<li>User should not be able to submit application to courses with zero seats.</li>
+								<li>Get all applications of logged user by dispatching 'userApplications' action function.</li>
+							</ul>
+
+							<h4>
+								<img
+									height="500"
+									src="https://hrcdn.net/s3_pub/istreet-assets/CFHPvVljj0oQNaBrMPEZ2A/apply.png"
+									width="1366" />
+							</h4>
+
+							<h4>ApplicationStatus Component:</h4>
+
+							<ul>
+								<li>This page is used to display status of applied applications.</li>
+								<li>Get all applications of current user by dispatching 'userApplications' action function.</li>
+								<li>Display the application details in given table.</li>
+							</ul>
+
+							<h4>
+								<img
+									height="500"
+									src="https://hrcdn.net/s3_pub/istreet-assets/MGbHtqMppWBb6B2I-2v76g/application_status.png"
+									width="1366" />
+							</h4>
+
+							<h4>ViewApplications Component:</h4>
+
+							<ul>
+								<li>This Page is used by admin to approve or reject user application.</li>
+								<li>Get all the applications of applicants by dispatching 'getApplications' action.</li>
+								<li>In table with id 'newApplicationsTable' display new applications with status 'Pending'.</li>
+								<li>Clicking on Approve should set the application status as Approved. For this operation use the action 'modifyApplicationStatus'.</li>
+								<li>Approving an application should also decrement one seat in particular course.</li>
+								<li>Admin should able to approve only finite number of applications for available seats.</li>
+								<li>When a course seats are emptied, no more applications can be approved.</li>
+								<li>Clicking on Reject should set the application status as Rejected. Use 'modifyApplicationStatus' action.</li>
+								<li>In table with id 'approvedApplicationsTable' display the application details of&nbsp;approved applications.</li>
+								<li>In table with id 'rejectedApplicationsTable' display the application details of&nbsp;rejected applications.</li>
+							</ul>
+
+							<h4>
+								<img
+									height="768"
+									src="https://hrcdn.net/s3_pub/istreet-assets/vo6-TzYym5wYHcGJLP4AFQ/applications.png"
+									width="1366" />
+							</h4>
+
+							<h4>AddSeats Component:</h4>
+
+							<ul>
+								<li>This page is used by admin to modify seat count of any particular course.</li>
+								<li>Get all course details by dispatching 'getCourses' action.</li>
+								<li>Populate all course name with course ids as options for select box.</li>
+								<li>Sample option- Civil Engineering (Id: 1)</li>
+								<li>Selecting any option should display current available seats of that course inside the label with classname 'availableSeats'.</li>
+								<li>When admin enters new seat count and submits, seat count should be changed&nbsp;in db.</li>
+								<li>For this operation dispatch the action 'addSeats'.</li>
+							</ul>
+
+							<h4>
+								<img
+									height="501"
+									src="https://hrcdn.net/s3_pub/istreet-assets/sWvNGfvFdeUhkcXI8SWhCg/addseats.png"
+									width="1365" />
+							</h4>
+
+							<h4>Slice.js</h4>
+
+							<ul>
+								<li>This page contains action function to perform asynchronous data operations.</li>
+								<li>Complete those functions where api's and request bodies are given in the code.</li>
+								<li>
+									Write the required reducer functions to save the data returned by action function into the store.<br />
+									&nbsp;
+								</li>
+							</ul>
+
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</section>
+				<section class="projects-instructions">
+					<h3 class="projects-instructions__heading">Software Instructions</h3>
+					<div class="projects-instructions__content">
+						<div>
+							<p>The question(s) requires <b>Node 18 LTS or above</b>.</p>
+
+							<ul>
+								<li>
+									<a
+										href="https://nodejs.org/en/download/"
+										target="_blank"
+										>Download &amp; Install Node.JS</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="projects-git-instructions">
+					<h3 class="projects-git-instructions__heading">Git Instructions</h3>
+					<p class="projects-git-instructions__subheading">Use the following commands to work with this project</p>
+					<div class="projects-git-instructions__commands">
+						<div
+							class="d-flex flex-column projects-git-instructions__commands-item"
+							data-automation="project-command-run">
+							<p class="projects-git-instructions__commands-item-label">
+								run
+								<button class="ui-btn ui-btn-normal ui-btn-plain projects-git-instructions__commands-item-copy-btn">
+									<div class="ui-content align-icon-right">
+										<span
+											class="ui-text"
+											aria-hidden="false"
+											>Copy</span
+										>
+									</div>
+								</button>
+							</p>
+							<p class="projects-git-instructions__commands-item-command-text">npm run json-server &amp; npm start</p>
+						</div>
+						<div
+							class="d-flex flex-column projects-git-instructions__commands-item"
+							data-automation="project-command-test">
+							<p class="projects-git-instructions__commands-item-label">
+								test
+								<button class="ui-btn ui-btn-normal ui-btn-plain projects-git-instructions__commands-item-copy-btn">
+									<div class="ui-content align-icon-right">
+										<span
+											class="ui-text"
+											aria-hidden="false"
+											>Copy</span
+										>
+									</div>
+								</button>
+							</p>
+							<p class="projects-git-instructions__commands-item-command-text">npm test</p>
+						</div>
+						<div
+							class="d-flex flex-column projects-git-instructions__commands-item"
+							data-automation="project-command-install">
+							<p class="projects-git-instructions__commands-item-label">
+								install
+								<button class="ui-btn ui-btn-normal ui-btn-plain projects-git-instructions__commands-item-copy-btn">
+									<div class="ui-content align-icon-right">
+										<span
+											class="ui-text"
+											aria-hidden="false"
+											>Copy</span
+										>
+									</div>
+								</button>
+							</p>
+							<p class="projects-git-instructions__commands-item-command-text">sudo apt-get install psmisc &amp;&amp; npm install</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
